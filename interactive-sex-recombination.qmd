@@ -1,9 +1,10 @@
 ---
 title: " 🧬 Supplementary Information"
-subtitle: "A 'second law' governs the evolutionary potential of sex"
+subtitle: "Macro-evolutionary emergence of sex"
 authors:
     - "**Philip J Gerrish**"
     - "**Benjamin Galeota Sprung**"
+    - "**Paul D Sniegowski**"
     - "**Richard E Lenski**"
 # engine: knitr
 # format: live-html
@@ -69,7 +70,7 @@ engine: knitr
 
 ### Interactive Ensemble Dynamics under Selection
 
-This document simulates an ensemble of deterministic populations under selection to explore the evolutionary dynamics of sexual reproduction and recombination. The simulation tracks populations of fictitious organisms with two genes (loci) X and Y, and demonstrates a fundamental result about the selective advantage of sex.
+This document simulates an ensemble of populations under selection to explore the evolutionary dynamics of sexual reproduction and recombination. The simulation tracks populations of fictitious organisms with two genes (loci) X and Y, and demonstrates a fundamental result about the selective advantage of sex.
 
 ### Biological Context
 
@@ -671,6 +672,7 @@ for i in range(gens):
 plt.figure()
 plt.plot(v5a, lw=8, color='gray', label='observed')
 plt.plot(v5b, color='r', label='predicted')
+plt.axhline(y=1, color='k', linestyle='--', label='y=1')
 plt.xlabel("Generation")
 plt.ylabel("Mean Fitness Difference")
 
